@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Phone Book</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Phone Book</h1>
+        <form action="" style="text-align:center">
+            <input type="search" placeholder="Search">
+            <label for="search"><img src="images/search.png"></label>
+        </form>
+    </header>
+    <br>
+    <section>
+        <table id="agenda">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><input type="text" name="firstName" placeholder="First Name" required></td>
+                    <td><input type="text" name="lastName" placeholder="Last Name" required></td>
+                    <td><input type="text" name="phone" placeholder="Phone" required></td>
+                    <td><button type="submit" onclick="savePerson()">Save</button></td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </section>
+    <script src="javascripts/agenda.js"></script>
+</body>
+
+</html>
