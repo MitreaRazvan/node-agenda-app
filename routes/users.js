@@ -18,7 +18,9 @@ router.post('/add', function(req, res, next) {
   //var strPersons = fs.readFileSync('./public/data/persons.json'); o alta metoda
   //var persons = JSON.parse(strPersons); o alta metoda
 
+  const id = new Date().getTime();
   persons.push({
+    id,
     firstName,
     lastName,
     phone
@@ -30,6 +32,7 @@ router.post('/add', function(req, res, next) {
   console.log(persons);
   res.json({
     success: true,
+    id,
     message: 'Done!'
   });
 });
