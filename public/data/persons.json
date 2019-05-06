@@ -1,32 +1,26 @@
 [
-    {
-        "firstName": "Marian",
-        "lastName": "Danut",
-        "phone": "0765837421"
-    },
-    {
-        "firstName": "Oana",
-        "lastName": "Mocanu",
-        "phone": "0754938573"
-    },
-    {
-        "firstName": "Mitrea",
-        "lastName": "Razvan",
-        "phone": "0754921851"
-    },
-    {
-        "firstName": "Ilie",
-        "lastName": "David",
-        "phone": "0758716385"
-    },
-    {
-        "firstName": "Muresan",
-        "lastName": "Alin",
-        "phone": "0754832841"
-    },
-    {
-        "firstName": "Avram",
-        "lastName": "Alexandru",
-        "phone": "0746848531"
-    }
+  {
+    "id": 1,
+    "firstName": "Marian",
+    "lastName": "Danut",
+    "phone": "0765837421"
+  },
+  {
+    "id": 2,
+    "firstName": "Oana",
+    "lastName": "Mocanu",
+    "phone": "0754938573"
+  },
+  {
+    "id": 3,
+    "firstName": "Mitrea",
+    "lastName": "Razvan",
+    "phone": "0754921851"
+  },
+  {
+    "id": 4,
+    "firstName": "Ilie",
+    "lastName": "David",
+    "phone": "0758716385"
+  }
 ]
