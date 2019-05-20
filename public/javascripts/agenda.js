@@ -27,6 +27,7 @@ fetch('data/persons.json').then(function (r) {
 });
 
 function display(persons) {
+    console.log(persons);
     var list = persons.map(function (person) {
         return `<tr data-id="${person.id}">
         <td>${person.firstName}</td>
@@ -163,6 +164,17 @@ function submitEditPerson(id, firstName, lastName, phone) {
     });
 }
 
+// daca avem un singur parametru nu mai trebuie sa punem paranteze rotunde ex "(value)" = "value"
+const search = value => {
+    value = value.toLowerCase().trim();
+    const filtered = allPersons.filter(person => {
+        return person.firstName.toLowerCase().includes(value) || 
+            person.lastName.toLowerCase().includes(value) ||
+            person.phone.toLowerCase().includes(value)
+    });
+    display(filtered);
+};
+
 function initEvents() {
     const tbody = document.querySelector('#agenda tbody');
     tbody.addEventListener('click', function (e) {
@@ -177,6 +189,17 @@ function initEvents() {
             editPerson(id);
         }
     });
+
+    const searchInput = document.getElementById('search');
+    searchInput.addEventListener('input', (e) => {
+        search(e.target.value);
+
+    })
+    //document.getElementById("search").addEventListener("input",function(){
+        //document.getElementById("search").innerHTML = "asa?";
+        //console.log("search", search.value);
+    //})
+
 }
 
 initEvents();
